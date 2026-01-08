@@ -1,0 +1,80 @@
+/*
+ * Custom styles for the professional website template
+ *
+ * This stylesheet supplements Bootstrap’s built‑in styles.  You can modify
+ * colours, spacing and other design elements here to fit your brand.  These
+ * styles keep the layout consistent across pages and ensure the site looks
+ * polished out‑of‑the‑box.
+ */
+
+/* Offset page content to accommodate the fixed navigation bar */
+body {
+    padding-top: 60px;
+}
+
+/* Hero section styling */
+.hero-section {
+    min-height: 70vh;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section .btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    color: #212529;
+}
+
+/* Features section icons */
+.features-section .icon i {
+    font-size: 3rem;
+}
+
+/* Footer styling */
+footer {
+    font-size: 0.9rem;
+}
+
+footer a {
+    transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+/*
+ * Custom glow effect for accordion items on the registration page
+ *
+ * The `.glow-card` class gives each accordion item a subtle box shadow and
+ * smooth transition.  When hovered, the card appears to lift off the page
+ * and glows with a coloured shadow.  You can reuse this class on other
+ * elements such as cards or feature boxes for a consistent interactive
+ * feel across your site.
+ */
+.glow-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 0.25rem;
+}
+
+.glow-card:hover {
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.4), 0 0 25px rgba(102, 16, 242, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Lighten accordion header backgrounds on hover to provide visual feedback */
+.accordion-button.collapsed:hover {
+    background-color: #f8f9fa;
+}
